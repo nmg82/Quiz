@@ -286,6 +286,7 @@
 				1E5C540A1CC807E100D2DC6E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

@@ -20,7 +20,7 @@
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="???" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xit-yd-t3V">
                                 <rect key="frame" x="288" y="20" width="25" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YQw-DY-2jo">
@@ -33,7 +33,7 @@
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="???" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="k6u-oV-QaA">
                                 <rect key="frame" x="288" y="289" width="25" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PZu-Pg-gC5">
@@ -43,22 +43,33 @@
                                     <action selector="showAnswer:" destination="BYZ-38-t0r" eventType="touchUpInside" id="ypV-fb-ncw"/>
                                 </connections>
                             </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iDA-tz-t1X">
+                                <rect key="frame" x="279" y="20" width="42" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
+                            <constraint firstItem="PZu-Pg-gC5" firstAttribute="centerX" secondItem="YQw-DY-2jo" secondAttribute="centerX" id="24v-pX-AeK"/>
                             <constraint firstItem="PZu-Pg-gC5" firstAttribute="top" secondItem="k6u-oV-QaA" secondAttribute="bottom" constant="8" id="BFn-Lu-UbU"/>
                             <constraint firstItem="YQw-DY-2jo" firstAttribute="top" secondItem="xit-yd-t3V" secondAttribute="bottom" constant="8" id="Ejf-Y0-Dhx"/>
-                            <constraint firstItem="xit-yd-t3V" firstAttribute="centerX" secondItem="YQw-DY-2jo" secondAttribute="centerX" id="IJe-vL-aIz"/>
-                            <constraint firstItem="PZu-Pg-gC5" firstAttribute="centerX" secondItem="YQw-DY-2jo" secondAttribute="centerX" id="TeP-lH-5Tt"/>
+                            <constraint firstItem="YQw-DY-2jo" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="JMO-vm-Zvj"/>
                             <constraint firstItem="xit-yd-t3V" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" id="Wul-yK-NdC"/>
                             <constraint firstItem="k6u-oV-QaA" firstAttribute="top" secondItem="YQw-DY-2jo" secondAttribute="bottom" constant="210" id="ct7-Ag-ZCd"/>
                             <constraint firstItem="xit-yd-t3V" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="cxb-6V-Uzi"/>
+                            <constraint firstItem="iDA-tz-t1X" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="fIH-10-o9z"/>
                             <constraint firstItem="k6u-oV-QaA" firstAttribute="centerX" secondItem="YQw-DY-2jo" secondAttribute="centerX" id="jnA-4K-Yjc"/>
+                            <constraint firstItem="iDA-tz-t1X" firstAttribute="top" secondItem="xit-yd-t3V" secondAttribute="top" id="uI9-OV-irw"/>
                         </constraints>
                     </view>
                     <connections>
                         <outlet property="answerLabel" destination="k6u-oV-QaA" id="M1U-VI-U3E"/>
-                        <outlet property="questionLabel" destination="xit-yd-t3V" id="pSA-vt-68o"/>
+                        <outlet property="currentQuestionLabel" destination="xit-yd-t3V" id="swU-2i-U6b"/>
+                        <outlet property="currentQuestionLabelCenterXConstraint" destination="cxb-6V-Uzi" id="DjX-dH-0gl"/>
+                        <outlet property="nextQuestionLabel" destination="iDA-tz-t1X" id="RjX-mh-eHS"/>
+                        <outlet property="nextQuestionLabelCenterXConstraint" destination="fIH-10-o9z" id="tnb-ek-W0M"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
